@@ -37,6 +37,27 @@
         </div>
       </div>
     </div>
+<div class="modal" id = "editModal">
+  <div class="modal-background" onclick = "closeModal()"></div>
+  <div class="modal-card">
+    <header class="modal-card-head">
+      <p class="modal-card-title">Modal title</p>
+      <button class="delete" aria-label="close" onclick = "closerModal()"></button>
+    </header>
+    <section class="modal-card-body" id = "editModalID">
+      <!-- Content ... -->
+      <input class="input is-medium" type="text" id="editTitle">
+      <input class="input is-medium" type="text" id="editText">
+      <p id = "noteeditID" class = "hidden" editID ></p>
+    <!--  <input id = "noteID" type = "hidden"> -->
+     
+    </section>
+    <footer class="modal-card-foot">
+      <button class="button is-success" onclick = "saveChanges()">Save changes</button>
+      <button class="button" onclick = "closeModal()">Cancel</button>
+    </footer>
+  </div>
+</div>
     <footer class="footer">
       <div class="container">
         <div class="content has-text-centered">

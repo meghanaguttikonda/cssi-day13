@@ -28,3 +28,8 @@ const signIn = () => {
     console.log(err);
   });
 }
+
+const switchWindow = () => {
+    console.log('here');
+    window.location = 'manual.html';
+}
